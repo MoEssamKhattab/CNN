@@ -1,4 +1,4 @@
-from .transforms import pipeline1
+from . import pipeline1
 
 def build_transforms(pipeline_name,config): 
     if pipeline_name == 'pipeline1':
