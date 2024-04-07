@@ -23,9 +23,9 @@ def get_transforms(mean,std):
         ])
 
         test_transforms = A.Compose(
-                        A.Normalize(mean= mean,\
+                    [A.Normalize(mean= mean,\
                     std =std ,\
                     max_pixel_value=1.0),
-                    ToTensorV2())
+                    ToTensorV2()])
         
         return train_transforms,test_transforms
